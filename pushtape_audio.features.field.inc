@@ -48,11 +48,20 @@ function pushtape_audio_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'file_entity',
+          'module' => 'soundmanager2',
           'settings' => array(
-            'file_view_mode' => 'track_player',
+            'amplifier' => 0,
+            'audio_type' => 'default',
+            'diameter' => '190',
+            'eq' => 0,
+            'inline' => 0,
+            'pause' => 'pause',
+            'stream' => FALSE,
+            'text' => 'title',
+            'visualization' => 1,
+            'waveform' => 0,
           ),
-          'type' => 'file_rendered',
+          'type' => 'soundmanager2_ui360',
           'weight' => '0',
         ),
         'featured' => array(
@@ -77,13 +86,6 @@ function pushtape_audio_field_default_fields() {
         'file_directory' => 'audio',
         'file_extensions' => 'mp3',
         'max_filesize' => '',
-        'mediafront' => array(
-          'custom' => '',
-          'field_type' => '0',
-          'media_type' => 'media',
-          'preview' => '0',
-          'thumbnail' => '0',
-        ),
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -93,7 +95,6 @@ function pushtape_audio_field_default_fields() {
           'allowed_schemes' => array(
             'private' => 'private',
             'public' => 'public',
-            'soundcloud' => 'soundcloud',
             'vimeo' => 0,
             'youtube' => 0,
           ),
@@ -106,7 +107,7 @@ function pushtape_audio_field_default_fields() {
           'browser_plugins' => array(
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 0,
-            'media_internet' => 0,
+            'media_internet' => 'media_internet',
             'upload' => 'upload',
           ),
           'progress_indicator' => 'throbber',
