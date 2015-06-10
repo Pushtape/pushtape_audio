@@ -2,13 +2,14 @@ name = Pushtape Audio
 description = This features package adds an audio file field to tracks.
 core = 7.x
 package = Pushtape
-php = 5.2.4
-version = 7.x-1.0-alpha3
 project = pushtape_audio
 dependencies[] = features
 dependencies[] = file
-dependencies[] = media
-dependencies[] = soundmanager2
-datestamp = 1376349399
+dependencies[] = pushtape_player
+datestamp = 1418283185
 features[features_api][] = api:2
-features_exclude[dependencies][pushtape_mediaplayer] = pushtape_mediaplayer
+
+
+version = "7.x-1.0-beta22"
+core = "7.x"
+project = "pushtape_audio"
