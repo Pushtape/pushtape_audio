@@ -2,11 +2,14 @@ name = Pushtape Audio
 description = This features package adds an audio file field to tracks.
 core = 7.x
 package = Pushtape
-version = 7.x-1.0-beta3
 project = pushtape_audio
 dependencies[] = features
 dependencies[] = file
 dependencies[] = pushtape_player
 datestamp = 1418283185
 features[features_api][] = api:2
-mtime = 1421802112
+
+
+version = "7.x-1.0-beta22"
+core = "7.x"
+project = "pushtape_audio"
